@@ -4,22 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:WashingtonYandun_MAUI"
+    xmlns:views="clr-namespace:WashingtonYandun_MAUI.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
         <ShellContent
-            Title="Notes"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Icon="icon_notes" />
-
-        <ShellContent
             Title="About"
-            ContentTemplate="{DataTemplate local:AboutPage}"
+            ContentTemplate="{DataTemplate views:AllNotesPage}"
             Icon="icon_about" />
         
         <ShellContent
             Title="Notes Wy"
-            ContentTemplate="{DataTemplate local:NotePage}"
+            ContentTemplate="{DataTemplate views:NotePage}"
             Icon="icon_about" />
     </TabBar>
 
